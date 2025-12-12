@@ -26,6 +26,8 @@ class NeuralSDEGenerator(GeneratorBase):
         """
         Linear layers for initial condition NN
         """
+
+        #trasforma il random vector V nello stato iniziale R1 tramite la rete neurale cosi definita:
         self.init_layer1 = nn.Linear(
            self.input_dim,
            self.hidden_dim,
@@ -45,6 +47,7 @@ class NeuralSDEGenerator(GeneratorBase):
         self.rho3 = nn.Parameter(torch.randn(1, 1).to(self.device))
         self.rho4 = nn.Parameter(torch.randn(1, 1).to(self.device))
 
+        #scegliamo se lasciare il parametro trainableoppure se settarlo su 1, in base a come impostiamo trainable_var in config
         if config.others.trainable_var:
           self.rho5 = nn.Parameter(torch.randn(1, 1).to(self.device))
         else: 
