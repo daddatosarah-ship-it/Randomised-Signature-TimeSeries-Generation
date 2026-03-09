@@ -37,7 +37,7 @@ class BrownianMotion(Data):
         self.drift = drift
         self.std = std
         self.dim = dim
-        self.h = 1
+        self.h = T/n_lags
         self.scaler = IDScaler()
 
     def generate(self, samples: int) -> torch.tensor:
