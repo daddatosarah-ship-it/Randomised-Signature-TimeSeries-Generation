@@ -82,7 +82,7 @@ def acf_diff(x_real, x_fake, lag, dim=(0, 1)):
 
 
 def p_val_normaltest(x_fake, timestep):
-    x_trunc = x_fake[timestep].detach().numpy()
+    x_trunc = x_fake[timestep].detach().cpu().numpy() 
     return stats.shapiro(x_trunc)[1]
 
 
