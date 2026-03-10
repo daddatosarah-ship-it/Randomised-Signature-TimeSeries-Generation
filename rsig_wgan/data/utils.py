@@ -2,7 +2,7 @@ import torch
 import omegaconf
 import numpy as np
 
-from .data import (
+from data import (
     BrownianMotion,
     SP500,
     AutoregressiveProcess,
