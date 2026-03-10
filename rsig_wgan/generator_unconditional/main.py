@@ -14,7 +14,7 @@ import sys
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
 from data import *
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
-from utils import *
+from data.utils import *
 
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
