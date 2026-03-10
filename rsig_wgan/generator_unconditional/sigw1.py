@@ -18,7 +18,7 @@ from utils import *
 """
 Time augmentation of input path
 """
-
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def apply_time_augmentations(x: torch.tensor, device=DEVICE) -> torch.tensor:
     y = x.clone().to(device)
