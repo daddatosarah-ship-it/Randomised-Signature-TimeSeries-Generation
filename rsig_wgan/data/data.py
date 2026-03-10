@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 from pathlib import Path
-from .scaling import Standardiser, IDScaler
+from scaling import Standardiser, IDScaler
 
 
 class Data:
