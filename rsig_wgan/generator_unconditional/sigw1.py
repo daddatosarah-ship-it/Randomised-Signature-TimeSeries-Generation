@@ -158,7 +158,7 @@ class SigWGANTraining:
 
     def fit(self):
         self.generator.to(self.device)
-        best_loss = None
+        best_loss = = float('inf')
 
         for j in tqdm(range(self.num_grad_steps)):
             self.generator_optim.zero_grad()
