@@ -29,25 +29,21 @@ def train_test_split(x: torch.tensor, ratio_train=0.2, ratio_val=0.1) -> torch.t
 def to_numpy(x: torch.tensor) -> np.array:
     return x.detach().cpu().numpy()
 
-def get_data(
-    config: omegaconf.dictconfig.DictConfig
-) -> torch.tensor:
+def get_data(id: str) -> torch.tensor:
     data, paths = None, None
-    if config.data.id == "BM":
-        data = BrownianMotion(
-                config.timeseries.n_lags,
-                config.bm.drift,
-                config.bm.std,
-                config.timeseries.data_dim
-            )
-        paths = data.generate(config.bm.samples)
-    elif config.data.id == "SP500":
-        data = SP500(config.timeseries.n_lags)
+    if id == "BM":
+        data = BrownianMotion(N_LAGS, BM_DRIFT, BM_STD, DATA_DIM)
+        paths = data.generate(BM_SAMPLES)
+    elif id == "GBM":
+        data = GBM(N_LAGS, GBM_DRIFT, GBM_STD, INITIAL_VALUE_GBM, DATA_DIM)
+        paths = data.generate(GBM_SAMPLES)
+    elif id == "SP500":
+        data = SP500(N_LAGS)
         paths = data.generate()
-    elif config.data.id == "AR":
-        data = AutoregressiveProcess(config.timeseries.n_lags, config.ar.phi)
-        paths = data.generate(config.ar.samples)
-    elif config.data.id == "FOREX":
-        data = FOREX(config.timeseries.n_lags)
+    elif id == "AR":
+        data = AutoregressiveProcess(N_LAGS, PHI)
+        paths = data.generate(AR_SAMPLES)
+    elif id == "FOREX":
+        data = FOREX(N_LAGS)
         paths = data.generate()
     return [data, train_test_split(paths)]
