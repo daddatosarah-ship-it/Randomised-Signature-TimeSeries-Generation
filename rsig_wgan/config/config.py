@@ -1,62 +1,62 @@
 # config.py
 
 # timeseries
-n_lags = 10
-data_dim = 1
-p = 6
-q = 10
+N_LAGS = 10
+DATA_DIM = 1
+P = 6
+Q = 10
 
 # bm
-bm_samples = 100000
-bm_drift = 0.1
-bm_std = 0.2
+BM_SAMPLES = 100000
+BM_DRIFT = 0.1
+BM_STD = 0.2
 
 # gbm
-gbm_samples = 50000
-gbm_drift = 0.0
-gbm_std = 1.0
-initial_value_gbm = 1.0
+GBM_SAMPLES = 50000
+GBM_DRIFT = 0.0
+GBM_STD = 1.0
+INITIAL_VALUE_GBM = 1.0
 
 # ar
-ar_samples = 50000
-phi = -0.1
-ar_std = 1.0
+AR_SAMPLES = 50000
+PHI = -0.1
+AR_STD = 1.0
 
 # hyperparameters
-learning_rate = 1e-4
-gradient_steps = 5
-batch_size = 10000
-mc_num = 1000
+LEARNING_RATE = 1e-4
+GRADIENT_STEPS = 5
+BATCH_SIZE = 10000
+MC_NUM = 1000
 
 # rsigw1
-reservoir_dim_metric = 80
+RESERVOIR_DIM_METRIC = 80
 
 # sigw1
-truncation_depth = 4
-normalise = True
+TRUNCATION_DEPTH = 4
+NORMALISE = True
 
 # neural_sde
-input_dim = 32
-hidden_dim = 32
-brownian_dim = 1
-reservoir_dim_gen = 80
-activation = "Sigmoid"
+INPUT_DIM = 32
+HIDDEN_DIM = 32
+BROWNIAN_DIM = 1
+RESERVOIR_DIM_GEN = 80
+ACTIVATION = "Sigmoid"
 
 # lstm
-inut_dim = 5  # typo mantenuto? "input_dim"?
-hidden_dim = 64
-num_layers = 2
+INPUT_DIM_LSTM = 5
+HIDDEN_DIM_LSTM = 64
+NUM_LAYERS = 2
 
 # data
-data_id = "BM"
+DATA_ID = "BM"
 
 # generator
-generator_id = "NeuralSDE"
+GENERATOR_ID = "NeuralSDE"
 
 # discriminator
-discriminator_id = "RSigW1"
+DISCRIMINATOR_ID = "RSigW1"
 
 # others
-trainable_var = True
-same_matrices = False
-time_homogeneous_readout = False
+TRAINABLE_VAR = True
+SAME_MATRICES = False
+TIME_HOMOGENEOUS_READOUT = False
