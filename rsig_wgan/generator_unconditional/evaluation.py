@@ -13,6 +13,9 @@ from rsigw1 import *
 from sigw1 import *
 from utils import *
 
+import sys
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
+from config import *
 
 class Evaluation:
     def __init__(self, training, x_train, x_test, scaler, generator_id, discriminator_id, activation_id, data_type, device=DEVICE):
