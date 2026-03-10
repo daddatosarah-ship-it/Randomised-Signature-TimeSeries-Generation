@@ -7,6 +7,8 @@ This file contains the setup of the implemented generator models:
 import torch
 import torch.nn as nn
 from typing import Tuple
+import sys
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
 from torch.types import Device
 
