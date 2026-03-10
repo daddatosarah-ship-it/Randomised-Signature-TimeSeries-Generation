@@ -8,8 +8,8 @@ Q = 10
 
 # bm
 BM_SAMPLES = 100000
-BM_DRIFT = 0.1
-BM_STD = 0.2
+BM_DRIFT = 0
+BM_STD = 1
 
 # gbm
 GBM_SAMPLES = 50000
@@ -23,7 +23,7 @@ PHI = -0.1
 AR_STD = 1.0
 
 # hyperparameters
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-3
 GRADIENT_STEPS = 50
 BATCH_SIZE = 10000
 MC_NUM = 1000
@@ -54,7 +54,7 @@ DATA_ID = "BM"
 GENERATOR_ID = "NeuralSDE"
 
 # discriminator
-DISCRIMINATOR_ID = "SigW1"
+DISCRIMINATOR_ID = "RSigW1"
 
 # others
 TRAINABLE_VARIANCE = True
