@@ -54,7 +54,7 @@ DATA_ID = "BM"
 GENERATOR_ID = "NeuralSDE"
 
 # discriminator
-DISCRIMINATOR_ID = "RSigW1"
+DISCRIMINATOR_ID = "SigW1"
 
 # others
 TRAINABLE_VARIANCE = True
