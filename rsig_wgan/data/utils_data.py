@@ -8,6 +8,8 @@ from data import (
     AutoregressiveProcess,
     FOREX
 )
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
+from config import *
 
 def sample_indices(dataset_size, batch_size: int) -> torch.tensor:
     indices = torch.from_numpy(np.random.choice(dataset_size, size=batch_size, replace=False))
