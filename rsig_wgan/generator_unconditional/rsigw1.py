@@ -15,7 +15,7 @@ from utils import *
 """
 Computes the randomised signature for an input path
 """
-
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def compute_rsig(path: torch.tensor, A1: torch.tensor, A2: torch.tensor, xi1: torch.tensor, xi2: torch.tensor,
                  res_dim: int, activation, device: str = DEVICE) -> torch.tensor:
