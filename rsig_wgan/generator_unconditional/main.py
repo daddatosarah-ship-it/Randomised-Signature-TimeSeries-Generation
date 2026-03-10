@@ -13,7 +13,8 @@ from evaluation import *
 import sys
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
 from data import *
-from utils import get_data
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
+from utils import *
 
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
