@@ -8,6 +8,7 @@ import numpy as np
 from typing import Any
 from scipy import stats
 
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def l2_dist(x, y: float) -> float:
     return (x - y).pow(2).sum().sqrt()
