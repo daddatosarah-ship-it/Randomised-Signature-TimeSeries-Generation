@@ -8,6 +8,7 @@ from data import (
     AutoregressiveProcess,
     FOREX
 )
+import sys
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
 
