@@ -8,11 +8,12 @@ from rsigw1 import *
 from sigw1 import *
 from generators import *
 from evaluation import *
+from data.utils import get_data
 
 import sys
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
 from data import *
-from utils import *
+
 sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
 import config
