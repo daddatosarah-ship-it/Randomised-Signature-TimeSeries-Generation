@@ -48,7 +48,7 @@ HIDDEN_DIM_LSTM = 64
 NUM_LAYERS_LSTM = 2
 
 # data
-DATA_ID = "BM"
+DATA_ID = "SP500"
 
 # generator
 GENERATOR_ID = "NeuralSDE"
