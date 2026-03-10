@@ -81,7 +81,7 @@ class Evaluation:
                                                                                 DATA_DIM))
           file.write("-------------------------------\n")
           file.write("Drift BM: {}\nStd BM: {}\nDrift GBM: {}\nStd GBM: {}\nPhi AR: {}\nStd AR: {}\n".format(
-              DRIFT_BM, STD_BM, DRIFT_GBM, STD_GBM, PHI, STD_AR))
+              BM_DRIFT, BM_STD, GBM_DRIFT, GBM_STD, PHI, AR_STD))
           file.write("-------------------------------\n")
           file.write("{}:\n".format(self.discriminator_id))
           file.write("Training error: {:.4e}\nTest error: {:.4e}\n".format(self.train_error, self.test_error))
