@@ -51,7 +51,7 @@ NUM_LAYERS_LSTM = 2
 DATA_ID = "BM"
 
 # generator
-GENERATOR_ID = "NeuralSDE"
+GENERATOR_ID = "LSTM"
 
 # discriminator
 DISCRIMINATOR_ID = "SigW1"
