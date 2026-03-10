@@ -8,11 +8,14 @@ from rsigw1 import *
 from sigw1 import *
 from generators import *
 from evaluation import *
+
+import sys
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan')
+
 from src.data.data import *
 from config import *
 import config
 import generators
-
 
 def get_generator(name):
     if name == "NeuralSDE":
