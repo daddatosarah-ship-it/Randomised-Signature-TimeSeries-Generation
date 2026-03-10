@@ -75,6 +75,8 @@ def acf(x, lag, dim=(0, 1)):
 
 
 def acf_diff(x_real, x_fake, lag, dim=(0, 1)):
+    x_real = x_real.to(DEVICE)
+    x_fake = x_fake.to(DEVICE)
     return l2_dist(acf(x_real, lag), acf(x_fake, lag))
 
 
