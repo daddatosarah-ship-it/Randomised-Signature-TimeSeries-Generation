@@ -12,6 +12,8 @@ sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/c
 from config import *
 from torch.types import Device
 
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 class GeneratorBase(nn.Module):
     def __init__(self, input_dim: int, output_dim: int):
         super(GeneratorBase, self).__init__()
