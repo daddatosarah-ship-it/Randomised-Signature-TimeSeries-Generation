@@ -10,12 +10,12 @@ from generators import *
 from evaluation import *
 
 import sys
-sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan')
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/data')
+from data import *
 
-from src.data.data import *
+sys.path.append('/content/Randomised-Signature-TimeSeries-Generation/rsig_wgan/config')
 from config import *
 import config
-import generators
 
 def get_generator(name):
     if name == "NeuralSDE":
