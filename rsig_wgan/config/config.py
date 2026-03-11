@@ -24,8 +24,8 @@ AR_STD = 1.0
 
 # hyperparameters
 LEARNING_RATE = 1e-4
-GRADIENT_STEPS = 1000
-BATCH_SIZE = 1500
+GRADIENT_STEPS = 2500
+BATCH_SIZE = 10000
 MC_NUM = 1000
 
 # rsigw1
@@ -48,10 +48,10 @@ HIDDEN_DIM_LSTM = 64
 NUM_LAYERS_LSTM = 2
 
 # data
-DATA_ID = "SP500"
+DATA_ID = "BM"
 
 # generator
-GENERATOR_ID = "LSTM"
+GENERATOR_ID = "NeuralSDE"
 
 # discriminator
 DISCRIMINATOR_ID = "RSigW1"
