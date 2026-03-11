@@ -95,10 +95,10 @@ class RSigWGANTraining:
         self.batch_size = batch_size
         self.n_lags = self.x_train.shape[1]
         self.generator = generator
-        self.generator_optim = optim.Adam(self.generator.parameters())
         self.best_generator = None
         self.num_grad_steps = num_grad_steps
         self.learning_rate = learning_rate
+        self.generator_optim = optim.Adam(self.generator.parameters(), lr=self.learning_rate)
         self.res_dim = res_dim
         self.data_dim = data_dim
         self.activation = activation
