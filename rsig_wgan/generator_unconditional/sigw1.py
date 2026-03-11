@@ -137,10 +137,10 @@ class SigWGANTraining:
         self.batch_size = batch_size
         self.n_lags = self.x_train.shape[1]
         self.generator = generator
-        self.generator_optim = optim.Adam(self.generator.parameters())
         self.best_generator = None
         self.num_grad_steps = num_grad_steps
         self.learning_rate = learning_rate
+        self.generator_optim = optim.Adam(self.generator.parameters(), lr=self.learning_rate)
         self.trunc = trunc
         self.normalise = normalise
         self.device = device
