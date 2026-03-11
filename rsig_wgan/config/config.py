@@ -48,10 +48,10 @@ HIDDEN_DIM_LSTM = 64
 NUM_LAYERS_LSTM = 2
 
 # data
-DATA_ID = "SP500"
+DATA_ID = "BM"
 
 # generator
-GENERATOR_ID = "NeuralSDE"
+GENERATOR_ID = "LSTM"
 
 # discriminator
 DISCRIMINATOR_ID = "SigW1"
