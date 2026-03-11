@@ -7,7 +7,7 @@ P = 6
 Q = 10
 
 # bm
-BM_SAMPLES = 10000
+BM_SAMPLES = 100000
 BM_DRIFT = 0
 BM_STD = 1
 
