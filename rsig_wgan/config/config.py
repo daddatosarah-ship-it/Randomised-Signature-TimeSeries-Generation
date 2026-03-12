@@ -24,7 +24,7 @@ AR_STD = 1.0
 
 # hyperparameters
 LEARNING_RATE = 1e-4
-GRADIENT_STEPS = 1000
+GRADIENT_STEPS = 500
 BATCH_SIZE = 1500
 MC_NUM = 1000
 
@@ -48,7 +48,7 @@ HIDDEN_DIM_LSTM = 64
 NUM_LAYERS_LSTM = 2
 
 # data
-DATA_ID = "BM"
+DATA_ID = "SP500"
 
 # generator
 GENERATOR_ID = "NeuralSDE"
