@@ -25,7 +25,7 @@ AR_STD = 1.0
 # hyperparameters
 LEARNING_RATE = 1e-4
 GRADIENT_STEPS = 1000
-BATCH_SIZE = 2000
+BATCH_SIZE = 3000
 MC_NUM = 1000
 
 # rsigw1
